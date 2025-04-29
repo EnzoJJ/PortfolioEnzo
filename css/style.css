@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -138,10 +140,13 @@ nav ul li a:hover {
   }
   
   .text-presentacion h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 0rem 0;
-    animation: colorChange 3s infinite alternate,float 3s ease-in-out infinite;;
-
+    animation: colorChange 3s infinite alternate,float 3s ease-in-out infinite;
+    font-family: 'League Spartan', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
   }
   
   .text-presentacion p {
