@@ -337,20 +337,21 @@ nav ul li a:hover {
   }
   
   .contenedor-proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
-    justify-content: center;
+    justify-items: center;  /* centra las tarjetas si no ocupan todo */
+    align-items: start;
   }
   
   .tarjeta-proyecto {
-    width: 300px;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.308);
     overflow: hidden;
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 320px;
   }
   /* Estado inicial oculto */
 .tarjeta-proyecto {
