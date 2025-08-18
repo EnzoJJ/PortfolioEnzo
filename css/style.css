@@ -337,10 +337,10 @@ nav ul li a:hover {
   }
   
   .contenedor-proyectos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    justify-items: center;
+    justify-content: center;
   }
   
   .tarjeta-proyecto {
