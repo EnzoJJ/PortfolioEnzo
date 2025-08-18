@@ -337,11 +337,10 @@ nav ul li a:hover {
   }
   
   .contenedor-proyectos {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    justify-items: center;  /* centra las tarjetas si no ocupan todo */
-    align-items: start;
+    justify-content: center;
   }
   
   .tarjeta-proyecto {
@@ -351,7 +350,6 @@ nav ul li a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.308);
     overflow: hidden;
     transition: transform 0.3s ease;
-    max-width: 320px;
   }
   /* Estado inicial oculto */
 .tarjeta-proyecto {
